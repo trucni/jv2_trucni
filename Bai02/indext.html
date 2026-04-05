@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dai hoc Khoa hoc Tu nhien</title>
+
+    <!--Cach 1: dung lien ket den file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Cach 2: dung the style de dinh dang CSS -->
+    <style> 
+        p {text-align: center; font-size: 15pt ;}
+        #post1 {color: blue;}
+        .colorRed {color: red;}
+        .doubleBorder {border: 5px double white;}
+
+        body {background-color: #f0f0f0;}
+    </style>
+</head>
+<body>
+    <h1>Vi du HTML Java Sript co ban</h1>
+    <p style="text-transform: uppercase;">Chao mung den voi khoa hoc HTML Java Script co ban</p>
+    <p>Day la mot doan van su dung the &lt;p&gt;</p>
+
+
+
+    <!--Cach 3: dung thuoc tinh style truc tiep trong the html -->
+    <p class="colorRed" style="text-align: right; font-size: 10pt; color: green;"> Day la mot doan van ban khac</p>
+ 
+    <p id="post1" class="colorRed">!important: dung de chon css co do uu tien cao nhat 
+        <br> 
+        Ket luan: css cua id co do uu tien cao hon css cua class, 
+    va css cua class co do uu tien cao hon css cua the html (the p), 
+    nhung neu dung !important thi se uu tien hon tat ca</p>
+
+    <!-- id: ky hieu # -->
+    <!-- class: ky hieu . -->
+     <!-- ap dung tat ca * -->
+    
+    <div style="background-color:red; padding-bottom:15px; width:45%">
+        <img src="img/sb.png" alt="logo" width="100px">
+    </div>
+
+    <div class="doubleBorder" style="background-color:blue; width:300px; margin-top: 15px;">
+        <img src="img/sb.png" alt="logo" width="100px">
+    </div>
+     
+    <script src="js/script.js"></script>
+
+    <button onclick="helloWorld()">Hello World!</button>
+
+    <p id="demo"> </p>
+
+    <div id="post">  </div>
+    <button onclick="getPost()">Hien thi bai viet</button>
+    <script>
+        document.getElementById("demo").innerHTML="DAI HOC KHOA HOC TU NHIEN";
+            function getPost() {
+                document.getElementById("post").innerHTML=`
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>`;
+            }
+
+        function helloWorld() {
+            alert("Hello world!");
+        }
+
+        /*var name = "Truc Ni";
+        let age = 30;
+        const address = "Saigon";
+        alert("Hello!"+name + ", " + age + " tuoi, den tu " + address); // hien thi mot hop thoai co chu Hello world!
+        */
+
+        var cong = 1 +2 +"a";
+        alert(cong);
+        /* Dấu cộng:
+        - Nếu 2 số thì sẽ thực hiện phép cộng
+        - Nếu 1 trong 2 là chuỗi thì sẽ thực hiện phép nối chuỗi*/
+
+        var a = 10;
+        var b = "10";
+        console.log(a == b); // true: so sanh gia tri
+        console.log(a === b); // false: so sanh ca gia tri va kieu
+         
+        
+
+    </script>
+</body>
+</html   
